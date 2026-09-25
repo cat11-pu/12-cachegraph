@@ -1,0 +1,13 @@
+{
+  "cycle_code": "E_CYCLE",
+  "budget": 3,
+  "changed": ["d"],
+  "nodes": [
+    {"id": "a", "deps": [], "version": 1},
+    {"id": "b", "deps": ["a"], "version": 1},
+    {"id": "c", "deps": ["b"], "version": 1},
+    {"id": "d", "deps": [], "version": 2},
+    {"id": "e", "deps": ["d"], "version": 1},
+    {"id": "f", "deps": ["c", "e"], "version": 1}
+  ]
+}
