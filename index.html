@@ -37,7 +37,7 @@ document.getElementById("run").addEventListener("click", function () {
     document.getElementById("out").textContent = JSON.stringify(result, null, 1);
   } catch (error) {
     status.className = "bad";
-    status.textContent = "出错 " + error.message;
+    status.textContent = "出错 " + (error.code ? error.code + " " : "") + error.message;
     document.getElementById("out").textContent = String(error && error.stack ? error.stack : error);
   }
 });
